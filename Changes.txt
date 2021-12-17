@@ -1,0 +1,21 @@
+All code that has been replaced has been commented out 
+
+
+
+-Renamed gameObject 'Asteroid Spawner' to '_Asteroid Manager'
+
+-Added class 'AsteroidDestroyer' to gameObject '_Asteroid Manager'
+
+-Defined class 'AsteroidSet' with a dictionary that contains all asteroids 
+that are currently in game aswell with register and deregister functions.
+
+-Moved function 'Destroy Asteroid' to class 'AsteroidDestroyer' without any
+dependency injection.
+
+-Added event 'OnScoreChanged' that is raised whenever an asteroid is destroyed.
+This UI listens to this and updates itself when this is called. 
+
+-Added gameObject '_GameManager' that keeps track of game time and reloads scene
+when ship dies.
+
+
